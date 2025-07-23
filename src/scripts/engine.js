@@ -184,6 +184,7 @@ async function resetDuel() {
 
 async function playAudio(status) {
     const audio = new Audio(`./src/assets/audios/${status}.wav`);
+    audio.volume = 0.2;
 
     try {
         audio.play();
@@ -191,13 +192,14 @@ async function playAudio(status) {
 }
 
 function init() {
+    const bgm = document.getElementById("bgm");
+    bgm.volume = 0.1;
+    bgm.play();
+
     ShowHiddenCardFieldsImages(false);
 
     drawCards(5, state.playerSides.player1);
     drawCards(5, state.playerSides.computer);
-
-    const bgm = document.getElementById("bgm");
-    bgm.play();
 }
 
 init();
