@@ -17,7 +17,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Um Jogo de Cartas do Yu-Gi-Oh!
 
-- [Para ver no site]
+- [Para ver no site](https://lupyeah.github.io/Yugioh/)
 
 ## 📋 Funcionalidades
 
